@@ -16,17 +16,6 @@ from PIL import Image
 import numpy as nmp
 import os
 
-# Notes:
-# - Image file to be converted MUST be located in the same directory as the script.
-# - A directory (folder) "out" is created to store the output. Having a folder with the same name would
-#   cause the script to use that folder instead.
-# - Not all image file types are guaranteed to work, and is programmed so far mainly for
-#   PNG, BMP, and JPG/JPEG image files (transparency supported). Other file types may still work
-#   since the channels are checked, not the image format (except for PNG).
-# - Palettized images will not work. Convert the image to RGB space beforehand.
-# - Using animated/multiframe image types will not work.
-
-
 ### Get filename
 filename = input("Please enter the filename, including the file extension: ")
 
@@ -134,7 +123,6 @@ try:
                     else: binarylist.append(darks)
                     
         # Check for other image files, intended for image files with 3 channels (i.e., no alpha channel)
-        # TODO: Add more conditions to satisfy other image files and properties that are not caught properly
         else:
             for x in data:
                 for xy in x:
