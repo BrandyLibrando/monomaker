@@ -2,9 +2,7 @@
 #                                              #
 #  Mono Maker - Image to Mono Converter        #
 #                                              #
-#  Author: Julius Alvin (Andy) Librando        #
-#  Created: April 22, 2024                     #
-#  Last modified: April 28, 2024               #
+#  Author: Brandy Librando                     #
 #                                              #
 #  Description:                                #
 #  Running this script converts an image into  #
