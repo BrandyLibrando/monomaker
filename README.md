@@ -2,6 +2,12 @@
 An image to byte array converter script using Python, mainly to be used for displaying images in monochrome displays such as the SSD1306.
 
 
+## Dependencies
+This script uses Pillow and Numpy. Kindly install them if you do not already have them using `pip install`. Windows users may do so by entering the following in their terminal/command prompt:
+- `py -m pip install Pillow`
+- `py -m pip install numpy`
+
+
 ## Description and Use
 This script allows converting images -- monochromatic or not -- into monochrome images represented as a byte array (in hex). It computes the luminance manually, while allowing transparency values to be included in the computation, if there exists an alpha channel. Additionally, the threshold for luminance can be specified by the user, which can be helpful for converting colored images (with enough contrast between the colors). However, the features are quite limited; *please refer to the "Caveats/Notes" and "Configurations" to see if the script can be used to your needs.*
 
@@ -54,7 +60,6 @@ Upon executing the .py file, the user will be asked for several inputs, which wi
   The filename of the output .txt file. If a file with the same filename entered already exists, the user will be asked to confirm overwrite. Entering "y" will overwrite the file; entering "n" will cause the script to ask for a new filename.
 
 
-## Dependencies
-This script uses Pillow and Numpy. Kindly install them if you do not already have them using `pip install`. Windows users may do so by entering the following in their terminal/command prompt:
-- `py -m pip install Pillow`
-- `py -m pip install numpy`
+## Future Steps
+- This was really just a script I made for myself to tinker around with my dusty SSD1306 displays, and figured it might be used by others too.
+- Might possibly create a more interactive version of this CLI tool, since that was the path it took anyway.
