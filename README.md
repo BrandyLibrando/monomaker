@@ -1,5 +1,5 @@
 # MonoMaker
-An image to byte array converter script using Python, mainly to be used for displaying images in monochrome displays such as the SSD1306.
+An image to byte array converter CLI app using Python, mainly to be used for displaying images in monochrome displays such as the SSD1306.
 
 
 ## Dependencies
